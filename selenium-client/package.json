@@ -1,0 +1,23 @@
+{
+  "name": "selenium-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server-update": "webdriver-manager update",
+    "server": "webdriver-manager start",
+    "proxy": "capture http://localhost:4444/ -p 4443 -R -o ./captures",
+    "start": "rimraf captures/* && node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "selenium-webdriver": "^4.3.1"
+  },
+  "devDependencies": {
+    "capture-proxy": "^0.2.6",
+    "rimraf": "^3.0.2",
+    "webdriver-manager": "^12.1.8"
+  }
+}
